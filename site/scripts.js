@@ -88,6 +88,4 @@ function getJson() {
 	request.done(function(data) {
 		return data;
 	});
-	
-	return false;
 }
