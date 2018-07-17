@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	windowResize();
 	
-	var json = getJson();
+	var json = $.getJSON("site/site.json");
 	$("#footer").html(json["footer"]);
 	
 	$(document).on("click", ".open-navigation", function() {
@@ -76,19 +76,4 @@ function getHeight(obj) {
 	}
 	
 	return objHeight;
-}
-
-function getJson() {
-	var request = $.ajax({
-		"url": "site/site.json",
-		"dataType": "json"
-	});
-	
-	request.done(function(data) {
-		return data;
-	});
-	
-	request.fail(function(jqXHR, textStatus) {
-		console.log(jqXHR + "|| " + textStatus);
-	});
 }
