@@ -1,3 +1,5 @@
+var json = getJson();
+
 $(document).ready(function() {
 	windowResize();
 	
@@ -18,7 +20,7 @@ $(document).ready(function() {
 	$(document).mouseup(function(e) {
 		var container = $(".side-navigation, .open-navigation, .popup-image, img");
 		
-		if (!container.is(e.target) && container.has(e.target).length == 0) {
+		if(!container.is(e.target) && container.has(e.target).length == 0) {
 			var navigation = $(".side-navigation");
 			
 			navigation.fadeOut(200);
@@ -73,4 +75,23 @@ function getHeight(obj) {
 	}
 	
 	return objHeight;
+}
+
+function getJson() {
+	var json = null;
+	$.ajax({
+		"async": false,
+		"global": false,
+		"url": "site/site.json",
+		"dataType": "json",
+		"success": function (data) {
+			json = data;
+		}
+	});
+	
+	return json;
+}
+
+function print(data) {
+	document.write(data);
 }
