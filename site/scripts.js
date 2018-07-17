@@ -1,9 +1,8 @@
-var json = getJson();
-
-$("#footer").html(json["footer"]);
-
 $(document).ready(function() {
 	windowResize();
+	
+	var json = getJson();
+	$("#footer").html(json["footer"]);
 	
 	$(document).on("click", ".open-navigation", function() {
 		var navigation = $(".side-navigation");
