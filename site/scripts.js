@@ -88,4 +88,8 @@ function getJson() {
 	request.done(function(data) {
 		return data;
 	});
+	
+	request.fail(function(jqXHR, textStatus) {
+		console.log(jqXHR + "|| " + textStatus);
+	});
 }
