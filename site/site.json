@@ -1,4 +1,9 @@
 {
 	"website-name": "Block Bros.",
 	"footer": "© 2018 Copyright – Website Template"
+	"footer-links": {
+		{"#", "Store"},
+		{"#", "About Us"},
+		{"#", "Contact"}
+	}
 }

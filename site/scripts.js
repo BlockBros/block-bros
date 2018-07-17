@@ -2,7 +2,15 @@ $(document).ready(function() {
 	windowResize();
 	
 	$.getJSON("site/site.json").done(function(json) {
+		document.title = pagename + " | " + json["website-name"];
+		$("#pagename").html(pagename);
 		$("#footer").html(json["footer"]);
+		
+		var footer_links = "";
+		for(var i = 0; i < (count(json["footer-links"]) - 1); i++) {
+			footer_links = footer_links + "<a href='" + json["footer-links"][i][0] + "'>" + json["footer-links"][i][1] + "</a>";
+		}
+		$(".footer-links").html(footer_links);
 	});
 	
 	$(document).on("click", ".open-navigation", function() {
