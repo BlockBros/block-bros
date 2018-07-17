@@ -82,7 +82,7 @@ function getJson() {
 	$.ajax({
 		"async": false,
 		"global": false,
-		"url": "/site.json",
+		"url": "site/site.json",
 		"dataType": "json",
 		"success": function (data) {
 			json = data;
