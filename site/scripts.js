@@ -1,8 +1,9 @@
 $(document).ready(function() {
 	windowResize();
 	
-	var json = $.getJSON("site/site.json").done(function(data) { console.log(data); });
-	$("#footer").html(json["footer"]);
+	$.getJSON("site/site.json").done(function(json) {
+		$("#footer").html(json["footer"]);
+	});
 	
 	$(document).on("click", ".open-navigation", function() {
 		var navigation = $(".side-navigation");
