@@ -60,7 +60,7 @@ html, body {
 }
 
 @media only screen and (max-width: 575px) {
-	.footer  {
+	.footer {
 		height: unset !important;
 		text-align: center;
 	}
@@ -97,8 +97,8 @@ html, body {
 	background-color: #008888 !important;
 	visibility: hidden;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .side-navigation .close:hover {
@@ -197,7 +197,7 @@ h3, h4 {
 
 .image img:hover {
 	-webkit-filter: brightness(110%);
-    filter: brightness(110%);
+	filter: brightness(110%);
 }
 
 .side-navigation .nav-item .fa,
