@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	windowResize();
 	
-	var json = $.getJSON("site/site.json");
+	var json = $.getJSON("site/site.json").done(function(data) { console.log(data); });
 	$("#footer").html(json["footer"]);
 	
 	$(document).on("click", ".open-navigation", function() {
