@@ -80,7 +80,6 @@ function getHeight(obj) {
 function getJson() {
 	var json = null;
 	$.ajax({
-		"sync": false,
 		"global": false,
 		"url": "site/site.json",
 		"dataType": "json",
