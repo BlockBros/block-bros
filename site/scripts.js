@@ -1,5 +1,7 @@
 var json = getJson();
 
+$("#footer").html(json["footer"]);
+
 $(document).ready(function() {
 	windowResize();
 	
@@ -80,7 +82,7 @@ function getHeight(obj) {
 function getJson() {
 	var json = null;
 	$.ajax({
-		"async": false,
+		"async": true,
 		"global": false,
 		"url": "site/site.json",
 		"dataType": "json",
@@ -90,8 +92,4 @@ function getJson() {
 	});
 	
 	return json;
-}
-
-function print(data) {
-	document.write(data);
 }
