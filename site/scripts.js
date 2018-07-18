@@ -60,7 +60,7 @@ $(document).ready(function() {
 	});
 	
 	$(document).mouseup(function(e) {
-		var container = $(".side-navigation, .open-navigation, .popup-image, img");
+		var container = $(".side-navigation, .open-navigation, .popup-image, .image img");
 		
 		if(!container.is(e.target) && container.has(e.target).length == 0) {
 			var navigation = $(".side-navigation");

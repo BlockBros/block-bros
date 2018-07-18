@@ -180,11 +180,11 @@ h3, h4 {
 	margin: 15px 0 10px 0;
 }
 
-.image {
+.image, .image-links {
 	text-align: left !important;
 }
 
-.image img {
+.image img, .image-links a img {
 	display: inline-block;
 	margin: 15px 15px 15px 0;
 	border-radius: 5px;
@@ -196,9 +196,15 @@ h3, h4 {
 	user-select: none;
 }
 
-.image img:hover {
+.image img:hover, .image-links a img:hover {
 	-webkit-filter: brightness(110%);
 	filter: brightness(110%);
+}
+
+.caption-image {
+	display: inline-flex;
+	flex-flow: column;
+	align-items: center;
 }
 
 .side-navigation .nav-item .fa,
