@@ -1,0 +1,25 @@
+{
+	"website-name": "Block Bros.",
+	"home-url": "#",
+	"navigation": [
+		["#", "Home"],
+		["#", "Blog"],
+		["#", "News"]
+	],
+	"side-navigation": [
+		["#", "<i class='fas fa-user'></i> My Profile"],
+		["#", "<i class='fas fa-wrench'></i> Preferences"],
+		["#", "<i class='fas fa-shopping-cart'></i> Store"]
+	],
+	"header": [
+		["#", "Wiki"],
+		["#", "Modding"],
+		["#", "Downloads"]
+	],
+	"footer": "© 2018 Copyright – Website Template",
+	"footer-links": [
+		["#", "Store"],
+		["#", "About Us"],
+		["#", "Contact"]
+	]
+}
