@@ -26,7 +26,7 @@ $(document).ready(function() {
 		for(var i = 0; i < header.length; i++) {
 			var index = null;
 			for(var j = 0; j < json["header"].length; j++) {
-				if(json["header"][j][1] == header[i]) {
+				if(json["header"][j][1].toLowerCase() == header[i].toLowerCase()) {
 					index = j;
 				}
 			}
